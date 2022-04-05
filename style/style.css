@@ -44,6 +44,7 @@ header {
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 .nav-links li .blog {
   color: #ff0000;
@@ -276,6 +277,14 @@ a {
   flex-wrap: wrap-reverse;
   gap: 15px;
 }
+hr {
+  width: 98%;
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  margin: 0.5em;
+  margin-top: 2rem;
+}
 .footer-logo {
   height: 45px;
   width: 45px;
@@ -294,6 +303,15 @@ a {
   flex-direction: column;
   margin-right: 1rem;
 }
+/* .footer-sections ul {
+  margin-top: 1rem;
+} */
+.footer-sections ul li {
+  margin-top: 1rem;
+}
+.footer-top-headings {
+  margin-bottom: 1rem;
+}
 
 /* Copy Right */
 .copy-right {
@@ -304,6 +322,14 @@ a {
   letter-spacing: 0.04em;
   text-align: left;
   color: #ffffff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.copy-right p {
+  margin-right: 1rem;
 }
 
 /* responsive query start here */
@@ -381,6 +407,9 @@ a {
   .nav-links:nth-last-child() {
     margin-right: 0.5em;
   }
+  .footer {
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 1165px) {
@@ -398,5 +427,8 @@ a {
   }
   .sub-heading {
     margin-bottom: 1.5em 0;
+  }
+  .footer {
+    justify-content: space-evenly;
   }
 }
