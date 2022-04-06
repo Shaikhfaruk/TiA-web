@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -111,7 +113,7 @@ header {
   justify-content: space-evenly;
 }
 .heading {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 26px;
   font-weight: 500;
   line-height: 30px;
@@ -119,7 +121,7 @@ header {
   text-align: left;
 }
 .sub-heading {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -187,7 +189,7 @@ img {
   align-items: flex-end;
 }
 .card-top p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -195,7 +197,7 @@ img {
   text-align: left;
 }
 .card-heading {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 25px;
@@ -315,7 +317,7 @@ hr {
 
 /* Copy Right */
 .copy-right {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
