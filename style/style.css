@@ -46,7 +46,6 @@ header {
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
 }
 .nav-links li .blog {
   color: #ff0000;
@@ -153,6 +152,58 @@ header {
   color: #000000;
   font-weight: bold;
   margin-right: 1rem;
+}
+
+.check-mai {
+  display: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+label span {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  height: 3px;
+  margin: 5px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(7px, 0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(20px, -7px) rotatez(45deg);
 }
 
 /* Card section start Here */
@@ -342,6 +393,8 @@ hr {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
+    flex-direction: column;
+    padding: 1rem;
   }
   .right-side,
   .left-side {
@@ -412,6 +465,12 @@ hr {
   .footer {
     justify-content: space-around;
   }
+  .check-mai {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1165px) {
@@ -428,9 +487,19 @@ hr {
     margin-bottom: 1em;
   }
   .sub-heading {
-    margin-bottom: 1.5em 0;
+    margin-bottom: 1.5em;
   }
   .footer {
     justify-content: space-evenly;
   }
+  .nav-links {
+    margin-right: 0.5em;
+  }
+  .logo {
+    margin-left: 0.5em;
+  }
 }
+
+/* @media screen and (min-width: 768px) {
+  
+} */
