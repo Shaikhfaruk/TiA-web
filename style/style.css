@@ -675,7 +675,7 @@ hr {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 1rem;
+  margin-left: 2rem;
   width: 100%;
 }
 .page2-content-right .content-title {
@@ -792,8 +792,15 @@ hr {
   }
   .page2-content-left .social-icons {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     margin-top: 0;
     width: 100%;
+  }
+  .page2-content-left .social-icons li {
+    margin: 0 0.5em;
+  }
+  .page2-content-right {
+    margin-left: 0;
+    padding: 0.5em;
   }
 }
