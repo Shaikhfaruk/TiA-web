@@ -757,3 +757,43 @@ hr {
   margin-bottom: 1rem;
   flex: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .page2-top-left {
+    text-align: center;
+  }
+  .page2-top-left h1 {
+    font-size: 2rem;
+  }
+  .page2-top-left p {
+    font-size: 1rem;
+  }
+  .page2-content {
+    flex-direction: column;
+  }
+  .page2-content-left {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+    flex-direction: row;
+    border-top: 0;
+    border-bottom: 2px solid #003294;
+  }
+  .page2-content-left .date {
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5em;
+  }
+  .page2-content-left .date .month {
+    width: 100%;
+  }
+  .page2-content-left .date .day {
+    margin-right: 0.5em;
+  }
+  .page2-content-left .social-icons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0;
+    width: 100%;
+  }
+}
